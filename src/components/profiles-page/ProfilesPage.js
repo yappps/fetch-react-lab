@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import ProfileCard from './ProfileCard';
 class ProfilesPage extends Component {
   constructor() {
     super();
@@ -18,8 +18,12 @@ class ProfilesPage extends Component {
   }
 
   render() {
-    return this.state.profiles.map((profile, i) => {
-      return <li key={i}>{profile.name.first}</li>;
+    return this.state.profiles.map((individualProfile, index) => {
+      return <ProfileCard 
+      key = {index}
+      individualData={individualProfile}
+      />
+      // return <li key={index}><ProfileCard/></li>;
     });
   }
 }
