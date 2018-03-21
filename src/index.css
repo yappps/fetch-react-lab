@@ -1,7 +1,47 @@
 body {
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
+  padding: 6%;
   font-family: sans-serif;
+  background-color: white;
+}
+#title{
+  text-align: center;
 }
 
+#root {
+  display: grid;
+  grid-template-columns: repeat(4, 2fr);
+  grid-gap: 13px;
+  grid-auto-rows: minmax(480px, auto);
+  grid-auto-flow: dense;
+}
+.Individual-Profile-Card {
+  background-color: white;
+  border-style: groove;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
 
+.PictureIcon-Title-Location {
+  background-color: deepskyblue;
+  color:white;
+}
+
+.Address {
+  padding:0.5px 1px;
+  background-color: rgb(32, 102, 160);
+  font-style: 
+}
+#ProfileIcon {
+  padding:14px;
+  border-radius: 5em;
+}
+#name{
+  margin:0px 0px 2px 0px;
+}
+
+#location {
+  margin: 2%;
+  font-size: 12px;
+  font-weight: 100;
+}

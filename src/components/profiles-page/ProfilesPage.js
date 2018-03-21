@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ProfileCard from './ProfileCard';
+import ProfileCard from "./ProfileCard";
 class ProfilesPage extends Component {
   constructor() {
     super();
@@ -9,7 +9,7 @@ class ProfilesPage extends Component {
   }
 
   componentDidMount() {
-    fetch("https://randomuser.me/api?results=3")
+    fetch("https://randomuser.me/api?results=9")
       .then(data => {
         return data.json();
       })
@@ -19,10 +19,7 @@ class ProfilesPage extends Component {
 
   render() {
     return this.state.profiles.map((individualProfile, index) => {
-      return <ProfileCard 
-      key = {index}
-      individualData={individualProfile}
-      />
+      return <ProfileCard id="index" key={index} individualData={individualProfile} />;
       // return <li key={index}><ProfileCard/></li>;
     });
   }
