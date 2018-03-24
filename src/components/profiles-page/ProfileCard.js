@@ -2,8 +2,8 @@ import React from "react";
 import ProfilePicture from "./ProfilePicture";
 import Title from "./Title";
 import Address from "./Location";
-import Contact from "./Contact";
 import "../../index.css";
+import PersonalDetails from './PersonalDetails';
 
 function ProfileCard(props) {
 //   console.log(props.individualData)
@@ -16,7 +16,8 @@ function ProfileCard(props) {
           <Address addressObject={props.individualData.location} />
         </div>
       </div>
-      <Contact contact={props.individualData} />
+      
+      <PersonalDetails details={props.individualData} />
     </div>
   );
 }
