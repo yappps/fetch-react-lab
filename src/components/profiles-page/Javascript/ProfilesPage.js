@@ -10,6 +10,30 @@ class ProfilesPage extends Component {
     this.getMoreUsers = this.getMoreUsers.bind(this);
   }
 
+  render() {
+    const displayProfiles = this.state.profiles.map(
+      (individualProfile, index) => {
+        return (
+          <ProfileCard
+            id="index"
+            key={index}
+            individualData={individualProfile}
+          />
+        );
+      }
+    );
+    return (
+      <div className="Profiles">
+        {displayProfiles}
+          {/* <i class="material-icons-add" onClick={this.handleScroll}>
+            +
+          </i> */}
+
+        {/* For scrolling */}
+        <p onScroll={this.handleScroll}>Getting more user profiles</p>
+      </div>
+    );
+  }
   handleScroll(event) {
     event.preventDefault();
     this.getMoreUsers();
@@ -34,32 +58,19 @@ class ProfilesPage extends Component {
       })
       .then(data => data.results)
       .then(data => this.setState({ profiles: data }));
+// For scrolling
     window.addEventListener("scroll", this.handleScroll);
   }
-
-  componentWillUnmount(){
-    window.removeEventListener('scroll',this.handleScroll)
+// For Scrolling 
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
   }
 
-  render() {
-    const displayProfiles = this.state.profiles.map(
-      (individualProfile, index) => {
-        return (
-          <ProfileCard
-            id="index"
-            key={index}
-            individualData={individualProfile}
-          />
-        );
-      }
-    );
-    return (
-      <div className="Profiles">
-        {displayProfiles}
-        <p onScroll={this.handleScroll}>Getting more user profiles</p>
-      </div>
-    );
+  handleMouseOver(event){
+    event.preventDefault();
   }
+
+ 
 }
 
 export default ProfilesPage;

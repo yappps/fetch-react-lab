@@ -26,7 +26,7 @@
 #location {
   margin: 2%;
   font-size: 12px;
-  font-weight: 100;
+  /* font-weight: 200; */
 }
 .details-hack {
   box-sizing: border-box;
@@ -35,5 +35,7 @@
 
 .material-icons {
   font-size: 16px;
-  
+  /* To align the icon with the text. IT FREAKY WORKS!! LIKE FINALLY */
+  vertical-align: text-bottom;
 }
+
