@@ -18,7 +18,7 @@ function ProfileCard(props) {
         <div className="Address">
           <Address addressObject={props.individualData.location} />
         </div>
-        
+  
       </div>
 
       <div className="details-hack">
