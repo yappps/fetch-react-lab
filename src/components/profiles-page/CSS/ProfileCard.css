@@ -12,12 +12,13 @@
 }
 
 .Address {
-  padding: 0.5px 1px;
+  padding: 1px 1px;
   background-color: rgb(78, 136, 184);
 }
 #ProfileIcon {
   padding: 14px;
   border-radius: 5em;
+  vertical-align: text-bottom;
 }
 #name {
   margin: 0px 0px 2px 0px;
@@ -26,11 +27,15 @@
 #location {
   margin: 2%;
   font-size: 12px;
-  /* font-weight: 200; */
 }
 .details-hack {
   box-sizing: border-box;
   padding: 0% 5%;
+}
+.details-hack-underline {
+  border-bottom: solid rgb(235, 231, 231);
+  border-bottom-width: 1.5px;
+  padding-bottom: 4px;
 }
 
 .material-icons {
@@ -38,4 +43,3 @@
   /* To align the icon with the text. IT FREAKY WORKS!! LIKE FINALLY */
   vertical-align: text-bottom;
 }
-
