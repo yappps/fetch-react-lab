@@ -1,0 +1,37 @@
+.Individual-ProfileCard {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 6px 10px 5px #888888;
+    border-radius: 0.5rem;
+}
+
+.PictureIcon-Title-Location {
+    text-align: center;
+    background-color: deepskyblue;
+    color:white;
+
+  }
+  
+  .Address {
+    padding:0.5px 1px;
+    background-color: rgb(78, 136, 184);
+  
+  }
+  #ProfileIcon {
+    padding:14px;
+    border-radius: 5em;
+  }
+  #name{
+    margin:0px 0px 2px 0px;
+  }
+  
+  #location {
+    margin: 2%;
+    font-size: 12px;
+    font-weight: 100;
+  }
+  
+  .details-hack{
+      padding-left: 10%;
+  }
+  

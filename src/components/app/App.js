@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ProfilesPage from "../profiles-page/ProfilesPage";
+import ProfilesPage from '../profiles-page/Javascript/ProfilesPage';
 import "./App.css";
 
 class App extends Component {
@@ -7,5 +7,4 @@ class App extends Component {
     return <ProfilesPage />;
   }
 }
-
 export default App;
