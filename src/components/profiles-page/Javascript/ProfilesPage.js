@@ -14,7 +14,7 @@ class ProfilesPage extends Component {
     event.preventDefault();
     this.getMoreUsers();
   }
-  getMoreUsers(number = 8) {
+  getMoreUsers(number = 1) {
     return fetch("https://randomuser.me/api?results=" + number)
       .then(data => {
         return data.json();
