@@ -1,8 +1,17 @@
+body, html{
+  height:100%
+}
 body {
   box-sizing: border-box;
   padding: 5%;
   font-family: sans-serif;
-  background-color: white;
+
+  /* For the background image to not move when scrolled */
+  background-image: url("https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1489372063000/photosp/22ba6e07-6fbd-47b4-a9b7-59a38cc415d8/stock-photo-wall-brick-copy-space-white-rustic-cracked-paint-texture-background-22ba6e07-6fbd-47b4-a9b7-59a38cc415d8.jpg"); 
+  background-image:no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+
 }
 #title{
   text-align: center;
